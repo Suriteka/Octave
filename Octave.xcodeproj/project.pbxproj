@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B77D3F8220C20B0009C44DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B77D3F7220C20B0009C44DB /* AppDelegate.swift */; };
+		6B77D3FA220C20B0009C44DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B77D3F9220C20B0009C44DB /* ViewController.swift */; };
+		6B77D3FD220C20B0009C44DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B77D3FB220C20B0009C44DB /* Main.storyboard */; };
+		6B77D3FF220C20B2009C44DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B77D3FE220C20B2009C44DB /* Assets.xcassets */; };
+		6B77D402220C20B2009C44DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B77D400220C20B2009C44DB /* LaunchScreen.storyboard */; };
+		6B77D40D220C20B2009C44DB /* OctaveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B77D40C220C20B2009C44DB /* OctaveTests.swift */; };
+		6B77D418220C20B2009C44DB /* OctaveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B77D417220C20B2009C44DB /* OctaveUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6B77D409220C20B2009C44DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B77D3EC220C20B0009C44DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B77D3F3220C20B0009C44DB;
+			remoteInfo = Octave;
+		};
+		6B77D414220C20B2009C44DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B77D3EC220C20B0009C44DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B77D3F3220C20B0009C44DB;
+			remoteInfo = Octave;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6B77D3F4220C20B0009C44DB /* Octave.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Octave.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B77D3F7220C20B0009C44DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6B77D3F9220C20B0009C44DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6B77D3FC220C20B0009C44DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6B77D3FE220C20B2009C44DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6B77D401220C20B2009C44DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6B77D403220C20B2009C44DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B77D408220C20B2009C44DB /* OctaveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OctaveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B77D40C220C20B2009C44DB /* OctaveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctaveTests.swift; sourceTree = "<group>"; };
+		6B77D40E220C20B2009C44DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B77D413220C20B2009C44DB /* OctaveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OctaveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B77D417220C20B2009C44DB /* OctaveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctaveUITests.swift; sourceTree = "<group>"; };
+		6B77D419220C20B2009C44DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6B77D3F1220C20B0009C44DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B77D405220C20B2009C44DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B77D410220C20B2009C44DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B77D3EB220C20B0009C44DB = {
+			isa = PBXGroup;
+			children = (
+				6B77D3F6220C20B0009C44DB /* Octave */,
+				6B77D40B220C20B2009C44DB /* OctaveTests */,
+				6B77D416220C20B2009C44DB /* OctaveUITests */,
+				6B77D3F5220C20B0009C44DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6B77D3F5220C20B0009C44DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B77D3F4220C20B0009C44DB /* Octave.app */,
+				6B77D408220C20B2009C44DB /* OctaveTests.xctest */,
+				6B77D413220C20B2009C44DB /* OctaveUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B77D3F6220C20B0009C44DB /* Octave */ = {
+			isa = PBXGroup;
+			children = (
+				6B77D3F7220C20B0009C44DB /* AppDelegate.swift */,
+				6B77D3F9220C20B0009C44DB /* ViewController.swift */,
+				6B77D3FB220C20B0009C44DB /* Main.storyboard */,
+				6B77D3FE220C20B2009C44DB /* Assets.xcassets */,
+				6B77D400220C20B2009C44DB /* LaunchScreen.storyboard */,
+				6B77D403220C20B2009C44DB /* Info.plist */,
+			);
+			path = Octave;
+			sourceTree = "<group>";
+		};
+		6B77D40B220C20B2009C44DB /* OctaveTests */ = {
+			isa = PBXGroup;
+			children = (
+				6B77D40C220C20B2009C44DB /* OctaveTests.swift */,
+				6B77D40E220C20B2009C44DB /* Info.plist */,
+			);
+			path = OctaveTests;
+			sourceTree = "<group>";
+		};
+		6B77D416220C20B2009C44DB /* OctaveUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6B77D417220C20B2009C44DB /* OctaveUITests.swift */,
+				6B77D419220C20B2009C44DB /* Info.plist */,
+			);
+			path = OctaveUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B77D3F3220C20B0009C44DB /* Octave */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B77D41C220C20B2009C44DB /* Build configuration list for PBXNativeTarget "Octave" */;
+			buildPhases = (
+				6B77D3F0220C20B0009C44DB /* Sources */,
+				6B77D3F1220C20B0009C44DB /* Frameworks */,
+				6B77D3F2220C20B0009C44DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Octave;
+			productName = Octave;
+			productReference = 6B77D3F4220C20B0009C44DB /* Octave.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6B77D407220C20B2009C44DB /* OctaveTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B77D41F220C20B2009C44DB /* Build configuration list for PBXNativeTarget "OctaveTests" */;
+			buildPhases = (
+				6B77D404220C20B2009C44DB /* Sources */,
+				6B77D405220C20B2009C44DB /* Frameworks */,
+				6B77D406220C20B2009C44DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B77D40A220C20B2009C44DB /* PBXTargetDependency */,
+			);
+			name = OctaveTests;
+			productName = OctaveTests;
+			productReference = 6B77D408220C20B2009C44DB /* OctaveTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6B77D412220C20B2009C44DB /* OctaveUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B77D422220C20B2009C44DB /* Build configuration list for PBXNativeTarget "OctaveUITests" */;
+			buildPhases = (
+				6B77D40F220C20B2009C44DB /* Sources */,
+				6B77D410220C20B2009C44DB /* Frameworks */,
+				6B77D411220C20B2009C44DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B77D415220C20B2009C44DB /* PBXTargetDependency */,
+			);
+			name = OctaveUITests;
+			productName = OctaveUITests;
+			productReference = 6B77D413220C20B2009C44DB /* OctaveUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6B77D3EC220C20B0009C44DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Suriteka;
+				TargetAttributes = {
+					6B77D3F3220C20B0009C44DB = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					6B77D407220C20B2009C44DB = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 6B77D3F3220C20B0009C44DB;
+					};
+					6B77D412220C20B2009C44DB = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 6B77D3F3220C20B0009C44DB;
+					};
+				};
+			};
+			buildConfigurationList = 6B77D3EF220C20B0009C44DB /* Build configuration list for PBXProject "Octave" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6B77D3EB220C20B0009C44DB;
+			productRefGroup = 6B77D3F5220C20B0009C44DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6B77D3F3220C20B0009C44DB /* Octave */,
+				6B77D407220C20B2009C44DB /* OctaveTests */,
+				6B77D412220C20B2009C44DB /* OctaveUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6B77D3F2220C20B0009C44DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B77D402220C20B2009C44DB /* LaunchScreen.storyboard in Resources */,
+				6B77D3FF220C20B2009C44DB /* Assets.xcassets in Resources */,
+				6B77D3FD220C20B0009C44DB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B77D406220C20B2009C44DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B77D411220C20B2009C44DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B77D3F0220C20B0009C44DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B77D3FA220C20B0009C44DB /* ViewController.swift in Sources */,
+				6B77D3F8220C20B0009C44DB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B77D404220C20B2009C44DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B77D40D220C20B2009C44DB /* OctaveTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B77D40F220C20B2009C44DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B77D418220C20B2009C44DB /* OctaveUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6B77D40A220C20B2009C44DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B77D3F3220C20B0009C44DB /* Octave */;
+			targetProxy = 6B77D409220C20B2009C44DB /* PBXContainerItemProxy */;
+		};
+		6B77D415220C20B2009C44DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B77D3F3220C20B0009C44DB /* Octave */;
+			targetProxy = 6B77D414220C20B2009C44DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6B77D3FB220C20B0009C44DB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B77D3FC220C20B0009C44DB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6B77D400220C20B2009C44DB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B77D401220C20B2009C44DB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6B77D41A220C20B2009C44DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6B77D41B220C20B2009C44DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6B77D41D220C20B2009C44DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 54PCF2T5ZE;
+				INFOPLIST_FILE = Octave/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Suriteka.Octave;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6B77D41E220C20B2009C44DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 54PCF2T5ZE;
+				INFOPLIST_FILE = Octave/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Suriteka.Octave;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6B77D420220C20B2009C44DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 54PCF2T5ZE;
+				INFOPLIST_FILE = OctaveTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Suriteka.OctaveTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Octave.app/Octave";
+			};
+			name = Debug;
+		};
+		6B77D421220C20B2009C44DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 54PCF2T5ZE;
+				INFOPLIST_FILE = OctaveTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Suriteka.OctaveTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Octave.app/Octave";
+			};
+			name = Release;
+		};
+		6B77D423220C20B2009C44DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 54PCF2T5ZE;
+				INFOPLIST_FILE = OctaveUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Suriteka.OctaveUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Octave;
+			};
+			name = Debug;
+		};
+		6B77D424220C20B2009C44DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 54PCF2T5ZE;
+				INFOPLIST_FILE = OctaveUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Suriteka.OctaveUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Octave;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B77D3EF220C20B0009C44DB /* Build configuration list for PBXProject "Octave" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B77D41A220C20B2009C44DB /* Debug */,
+				6B77D41B220C20B2009C44DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B77D41C220C20B2009C44DB /* Build configuration list for PBXNativeTarget "Octave" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B77D41D220C20B2009C44DB /* Debug */,
+				6B77D41E220C20B2009C44DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B77D41F220C20B2009C44DB /* Build configuration list for PBXNativeTarget "OctaveTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B77D420220C20B2009C44DB /* Debug */,
+				6B77D421220C20B2009C44DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B77D422220C20B2009C44DB /* Build configuration list for PBXNativeTarget "OctaveUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B77D423220C20B2009C44DB /* Debug */,
+				6B77D424220C20B2009C44DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6B77D3EC220C20B0009C44DB /* Project object */;
+}
