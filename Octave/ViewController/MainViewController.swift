@@ -9,7 +9,12 @@
 import UIKit
 
 class MainViewController: UIViewController {
+    // Variables
+    var droneConnection:DroneConnection = DroneConnection()
 
+    // UI Component
+    @IBOutlet weak var droneStatus: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,14 +22,9 @@ class MainViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func connectToDrone(_ sender: Any) {
+        print("Connection")
+        droneConnection.tryConnection()
+        droneStatus.text = "Connecté: \(DroneConnection.connected), \(DroneConnection.model) \(DroneConnection.firmware)"
     }
-    */
-
 }

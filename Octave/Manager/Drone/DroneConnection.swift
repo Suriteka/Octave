@@ -10,21 +10,22 @@ import Foundation
 import DJISDK
 
 class DroneConnection {
+    let SSID = ""
+
     public static var connected:Bool = false
     public static var firmware:String = ""
     public static var model:String = ""
-
+    
     /*
      * TryConnection
      * Trying to connect to the drone
      */
-    static func tryConnection() {
-    
+     func tryConnection() {
         guard let connectedKey = DJIProductKey(param: DJIParamConnection) else {
-            print("Error creating the connectedKey")
+            NSLog("Error creating the connectedKey")
             return;
         }
-        
+
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             DJISDKManager.keyManager()?.startListeningForChanges(on: connectedKey, withListener: self, andUpdate: { (oldValue: DJIKeyedValue?, newValue : DJIKeyedValue?) in
                 if let newVal = newValue {
@@ -47,13 +48,14 @@ class DroneConnection {
                 }
             })
         }
+        
     }
     
     /*
      * productConnected
      * Trying to connect to the drone
      */
-    static func productConnected() {
+    func productConnected() {
         guard let newProduct = DJISDKManager.product() else {
             print("Product is connected but DJISDKManager.product is nil -> something is wrong")
             return;
@@ -75,7 +77,7 @@ class DroneConnection {
                 print("Firmware package version is: \(version ?? "Unknown")")
             }
             
-            DroneConnection.firmware = firmware
+            DroneConnection.firmware = "\(version ?? "Unknown")"
         }
     }
     
@@ -83,7 +85,7 @@ class DroneConnection {
      * productDisconnected
      * Disconnect the connexion to the drone
      */
-    static func productDisconnected() {
+    func productDisconnected() {
         DroneConnection.connected = false
         print("Disconnected")
     }

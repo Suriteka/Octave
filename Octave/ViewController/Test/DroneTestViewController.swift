@@ -27,4 +27,29 @@ class DroneTestViewController: UIViewController {
     }
     */
 
+    @IBAction func takeOff(_ sender: Any) {
+        LandingManager.instance.takeOff()
+    }
+    
+    @IBAction func scenario(_ sender: Any) {
+        MovingManager.instance.restart()
+        MovingManager.instance.appendMouvement(mouvement: Movement(direction: .top, duration: 3.0))
+        MovingManager.instance.appendMouvement(mouvement: Movement(direction: .right, duration: 3.1))
+        MovingManager.instance.appendMouvement(mouvement: Movement(direction: .top, duration: 5.2))
+        MovingManager.instance.appendMouvement(mouvement: Movement(direction: .left, duration: 2.8))
+        
+        MovingManager.instance.play()
+    }
+    
+    @IBAction func stop(_ sender: Any) {
+        MovingManager.instance.restart()
+
+        MovingManager.instance.appendMouvement(mouvement: Movement(direction: .stop, duration: 0.0))
+        
+        MovingManager.instance.play()
+    }
+    
+    @IBAction func landing(_ sender: Any) {
+        LandingManager.instance.landing()
+    }
 }
