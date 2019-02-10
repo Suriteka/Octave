@@ -1,0 +1,6 @@
+framework module Pods_Octave {
+  umbrella header "Pods-Octave-umbrella.h"
+
+  export *
+  module * { export * }
+}
