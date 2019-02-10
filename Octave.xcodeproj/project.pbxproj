@@ -19,13 +19,17 @@
 		6B2852D4220EE78100110F2D /* config.json in Resources */ = {isa = PBXBuildFile; fileRef = 6B2852D3220EE78100110F2D /* config.json */; };
 		6B2852D7220EE88100110F2D /* ConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2852D6220EE88100110F2D /* ConfigManager.swift */; };
 		6B2852DA220F22B800110F2D /* OctaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2852D9220F22B800110F2D /* OctaveViewController.swift */; };
+		6B2852E2220F542A00110F2D /* Scenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2852E1220F542A00110F2D /* Scenario.swift */; };
+		6B2852E5220F55D900110F2D /* exercice1.json in Resources */ = {isa = PBXBuildFile; fileRef = 6B2852E4220F55D900110F2D /* exercice1.json */; };
+		6B2852E7220F594E00110F2D /* Exercice1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2852E6220F594E00110F2D /* Exercice1ViewController.swift */; };
 		6B35496F220CC3E400586A41 /* DroneTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B35496E220CC3E400586A41 /* DroneTestViewController.swift */; };
 		6B354971220CC63300586A41 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B354970220CC63300586A41 /* MainViewController.swift */; };
 		6B354973220CC6FB00586A41 /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6BA88954220CBF2300BCAC08 /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6B354978220CC70B00586A41 /* VideoPreviewer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6BA88956220CBF2D00BCAC08 /* VideoPreviewer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6B35497F220CC78300586A41 /* Pods_Octave.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 984DCFF477098D1BD5DAC7C4 /* Pods_Octave.framework */; };
-		6B354982220CCCC400586A41 /* DroneGimbal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B354981220CCCC400586A41 /* DroneGimbal.swift */; };
+		6B354982220CCCC400586A41 /* GimbalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B354981220CCCC400586A41 /* GimbalManager.swift */; };
 		6B354984220CCD2C00586A41 /* DroneConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B354983220CCD2C00586A41 /* DroneConnection.swift */; };
+		6B6597FF220F5FB4007524CE /* exercice2.json in Resources */ = {isa = PBXBuildFile; fileRef = 6B6597FE220F5FB4007524CE /* exercice2.json */; };
 		6B77D3F8220C20B0009C44DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B77D3F7220C20B0009C44DB /* AppDelegate.swift */; };
 		6B77D3FD220C20B0009C44DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B77D3FB220C20B0009C44DB /* Main.storyboard */; };
 		6B77D3FF220C20B2009C44DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B77D3FE220C20B2009C44DB /* Assets.xcassets */; };
@@ -88,10 +92,14 @@
 		6B2852D3220EE78100110F2D /* config.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = config.json; sourceTree = "<group>"; };
 		6B2852D6220EE88100110F2D /* ConfigManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigManager.swift; sourceTree = "<group>"; };
 		6B2852D9220F22B800110F2D /* OctaveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctaveViewController.swift; sourceTree = "<group>"; };
+		6B2852E1220F542A00110F2D /* Scenario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scenario.swift; sourceTree = "<group>"; };
+		6B2852E4220F55D900110F2D /* exercice1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = exercice1.json; sourceTree = "<group>"; };
+		6B2852E6220F594E00110F2D /* Exercice1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercice1ViewController.swift; sourceTree = "<group>"; };
 		6B35496E220CC3E400586A41 /* DroneTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroneTestViewController.swift; sourceTree = "<group>"; };
 		6B354970220CC63300586A41 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		6B354981220CCCC400586A41 /* DroneGimbal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroneGimbal.swift; sourceTree = "<group>"; };
+		6B354981220CCCC400586A41 /* GimbalManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GimbalManager.swift; sourceTree = "<group>"; };
 		6B354983220CCD2C00586A41 /* DroneConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroneConnection.swift; sourceTree = "<group>"; };
+		6B6597FE220F5FB4007524CE /* exercice2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = exercice2.json; sourceTree = "<group>"; };
 		6B77D3F4220C20B0009C44DB /* Octave.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Octave.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B77D3F7220C20B0009C44DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6B77D3FC220C20B0009C44DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -220,9 +228,41 @@
 		6B2852D8220F21DF00110F2D /* Gimbal */ = {
 			isa = PBXGroup;
 			children = (
-				6B354981220CCCC400586A41 /* DroneGimbal.swift */,
+				6B354981220CCCC400586A41 /* GimbalManager.swift */,
 			);
 			path = Gimbal;
+			sourceTree = "<group>";
+		};
+		6B2852DB220F522E00110F2D /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		6B2852DF220F53DE00110F2D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6B2852E0220F541E00110F2D /* Scenario */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		6B2852E0220F541E00110F2D /* Scenario */ = {
+			isa = PBXGroup;
+			children = (
+				6B2852E1220F542A00110F2D /* Scenario.swift */,
+			);
+			path = Scenario;
+			sourceTree = "<group>";
+		};
+		6B2852E3220F555B00110F2D /* Scenarios */ = {
+			isa = PBXGroup;
+			children = (
+				6B2852E4220F55D900110F2D /* exercice1.json */,
+				6B6597FE220F5FB4007524CE /* exercice2.json */,
+			);
+			path = Scenarios;
 			sourceTree = "<group>";
 		};
 		6B35496B220CC30E00586A41 /* Test */ = {
@@ -237,6 +277,7 @@
 		6B35496C220CC31600586A41 /* Exercice */ = {
 			isa = PBXGroup;
 			children = (
+				6B2852E6220F594E00110F2D /* Exercice1ViewController.swift */,
 			);
 			path = Exercice;
 			sourceTree = "<group>";
@@ -274,6 +315,8 @@
 		6B77D3F6220C20B0009C44DB /* Octave */ = {
 			isa = PBXGroup;
 			children = (
+				6B2852E3220F555B00110F2D /* Scenarios */,
+				6B2852DF220F53DE00110F2D /* Helpers */,
 				6BC6A064220C2533004C9458 /* ViewController */,
 				6B77D425220C23D6009C44DB /* Manager */,
 				6B77D3F7220C20B0009C44DB /* AppDelegate.swift */,
@@ -328,6 +371,7 @@
 		6BA88959220CBFDF00BCAC08 /* Drone */ = {
 			isa = PBXGroup;
 			children = (
+				6B2852DB220F522E00110F2D /* Camera */,
 				6B2852D8220F21DF00110F2D /* Gimbal */,
 				6B2852CA220EE18A00110F2D /* Landing */,
 				6B2852C1220EDFA800110F2D /* Moving */,
@@ -469,9 +513,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B77D402220C20B2009C44DB /* LaunchScreen.storyboard in Resources */,
+				6B6597FF220F5FB4007524CE /* exercice2.json in Resources */,
 				6B77D3FF220C20B2009C44DB /* Assets.xcassets in Resources */,
 				6B2852D4220EE78100110F2D /* config.json in Resources */,
 				6B77D3FD220C20B0009C44DB /* Main.storyboard in Resources */,
+				6B2852E5220F55D900110F2D /* exercice1.json in Resources */,
 				6B2852B9220DD3F100110F2D /* drone.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -596,7 +642,9 @@
 				6B2852C6220EDFB100110F2D /* CGPoints+Extensions.swift in Sources */,
 				6BC6A066220C2592004C9458 /* SocketTestViewController.swift in Sources */,
 				6B2852CC220EE1A700110F2D /* LandingManager.swift in Sources */,
-				6B354982220CCCC400586A41 /* DroneGimbal.swift in Sources */,
+				6B2852E7220F594E00110F2D /* Exercice1ViewController.swift in Sources */,
+				6B354982220CCCC400586A41 /* GimbalManager.swift in Sources */,
+				6B2852E2220F542A00110F2D /* Scenario.swift in Sources */,
 				6B77D427220C23EA009C44DB /* SocketManager.swift in Sources */,
 				6B2852DA220F22B800110F2D /* OctaveViewController.swift in Sources */,
 				6B2852C9220EDFB100110F2D /* MovingManager.swift in Sources */,

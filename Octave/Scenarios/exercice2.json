@@ -1,0 +1,28 @@
+{
+    "name": "Exercice 1",
+    "sequence" : [
+        [
+            {
+                "movementDirection" : "left",
+                "speed": "0.3",
+                "duration" : "0.4",
+                "beforeAction": "takePicture",
+                "afterAction": "takePicture",
+            }
+        ],
+        [
+            {
+                "movementDirection" : "left",
+                "speed": "0.3",
+                "duration" : "0.4"
+            },
+            {
+                "movementDirection" : "up",
+                "speed": "0.3",
+                "duration" : "0.4"
+            }
+        ],
+        
+    ],
+    "repeatBack": true
+}

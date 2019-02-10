@@ -66,7 +66,7 @@ class MovingManager {
             
         } else {
             // Stop the drone
-            MovingManager.instance.appendMouvement(mouvement: Movement(direction: .stop, duration: 0.0))
+            MovingManager.instance.appendMouvement(mouvement: Movement(direction: .stop, duration: 0.0, speed: 0.0))
         }
     }
     
