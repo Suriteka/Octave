@@ -16,6 +16,7 @@ class Exercice1ViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         scenario = Scenario(name: "exercice1")
+        scenario.play()
     }
     
 }

@@ -5,8 +5,8 @@ target 'Octave' do
   use_frameworks!
 
   # Pods for Octave
-  pod 'Starscream'
   pod 'DJI-SDK-iOS'
+  pod 'Starscream'
   pod 'SwiftyJSON', '~> 4.0'
 
   target 'OctaveTests' do

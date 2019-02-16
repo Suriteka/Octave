@@ -18,36 +18,35 @@ class Scenario {
     init(name: String) {
         let jsonFile = JSONFileManager.init(fileName: name)
         scenarioJSON = jsonFile.decode()
-        JSONSequencetoDrone()
-    }
-    
-    /* JSON to sequence */
-    func sequenceJSON() {
         
+        let scenarioArray = scenarioJSON.arrayValue
+        
+        scenarioArray.forEach { (sequence) in
+            self.JSONSequencetoDrone(sequence: sequence)
+        }
+
     }
     
-    /* Play the scenario */
-    func play() {
-        print("Playing the scenario")
-    }
-    
-    func JSONSequencetoDrone() {
+    /* Convert the array from JSON to Drone */
+    func JSONSequencetoDrone(sequence:JSON) {
         // Movement
-        let direction = scenarioJSON["direction"].rawString()!
-        let duration = scenarioJSON["duration"].rawString()!
-        let speed = scenarioJSON["speed"].rawString()!
+        let direction = sequence["direction"].rawString()!
+        let duration = sequence["duration"].rawString()!
+        let speed = sequence["speed"].rawString()!
 
         let movement = movementCreator(direction: direction, duration: duration, speed: speed)
+
         MovingManager.instance.appendMouvement(mouvement: movement)
-        
+
         // Action
         // There can be multiple actions (can be taken before or after the sequence)
         // Take a photo, changeGimball, landing, takeOff, ...
-        let action = scenarioJSON["action"]
-        let afterAction = scenarioJSON["afterAction"]
-        let beforeAction = scenarioJSON["beforeAction"]
+        let action = sequence["action"]
+        let afterAction = sequence["afterAction"]
+        let beforeAction = sequence["beforeAction"]
     }
     
+    /* Create the movement */
     func movementCreator(direction:String, duration:String, speed:String) -> Movement {
         var movement:Movement
         
@@ -77,4 +76,10 @@ class Scenario {
 
         return movement
     }
+    
+    /* Play the scenario */
+    func play() {
+        MovingManager.instance.play()
+    }
+    
 }

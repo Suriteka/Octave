@@ -41,15 +41,15 @@ class MovingManager {
                     switch move.direction {
                         case .left,.right:
                             mySpark.mobileRemoteController?.rightStickVertical = 0.0
-                            mySpark.mobileRemoteController?.rightStickHorizontal = Float(move.direction.value().x)
+                            mySpark.mobileRemoteController?.rightStickHorizontal = Float(move.direction.value().x * move.speed)
                         
                         case .top,.back:
                             mySpark.mobileRemoteController?.rightStickHorizontal = 0.0
-                            mySpark.mobileRemoteController?.rightStickVertical = Float(move.direction.value().y)
+                            mySpark.mobileRemoteController?.rightStickVertical = Float(move.direction.value().y * move.speed)
                         
                         case .topLeft,.topRight, .bottomLeft, .bottomRight:
-                            mySpark.mobileRemoteController?.rightStickHorizontal = Float(move.direction.value().x)
-                            mySpark.mobileRemoteController?.rightStickVertical = Float(move.direction.value().y)
+                            mySpark.mobileRemoteController?.rightStickHorizontal = Float(move.direction.value().x * move.speed)
+                            mySpark.mobileRemoteController?.rightStickVertical = Float(move.direction.value().y * move.speed)
                         
                         case .stop:
                             mySpark.mobileRemoteController?.rightStickHorizontal = Float(0)
