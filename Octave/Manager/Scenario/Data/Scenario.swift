@@ -116,6 +116,16 @@ class Scenario {
                     default: print("Unknown ActionName of sparkDirectionVertical in actionCreator function")
                 }
             
+            case ".sparkGimbalRotation":
+                switch actionName {
+                case ".top":
+                    action = Action.sparkGimbalRotation(direction: .top, speed: speed)
+                case ".bottom":
+                    action = Action.sparkGimbalRotation(direction: .bottom, speed: speed)
+                default: print("Unknown ActionName of sparkDirectionVertical in actionCreator function")
+            }
+            
+            
             /* By default if the action is not ok */
             default:
                 action = Action.sparkDirectionHorizontal(direction: .left, speed: speed)

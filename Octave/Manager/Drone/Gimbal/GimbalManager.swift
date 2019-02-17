@@ -20,15 +20,25 @@ public class GimbalManager {
     
     static let shared = GimbalManager()
     
-    func setup(withDuration duration: TimeInterval, defaultPitch defaultPitchRotation: NSNumber = 0) {
-        
-        speed = duration
+    func setup() {
         gimbal = getGimbal()
         
         gimbal?.setMode(DJIGimbalMode.free, withCompletion: { (err) in
             self.ready = true
         })
         
+    }
+
+    func executeGimbalRotation(action : ActionSparkGimbalRotation) {
+        if ConfigManager.shared.config["debug"] == "true" {
+            print("Gimball rotation to \(action.direction)")
+        } else {
+            
+            switch action.direction {
+                case .top: rotate(degrees: action.direction.value(), speed: action.speed)
+                case .bottom: rotate(degrees: action.direction.value(), speed: action.speed)
+            }
+        }
     }
     
     private func getGimbal() -> DJIGimbal? {
@@ -46,9 +56,9 @@ public class GimbalManager {
     }
     
     
-    func rotate(degrees: Float) {
+    func rotate(degrees: Float, speed: CGFloat) {
         
-        let rotation = DJIGimbalRotation(pitchValue: NSNumber(value: degrees), rollValue: 0, yawValue: 0, time: self.speed!, mode: DJIGimbalRotationMode.relativeAngle)
+        let rotation = DJIGimbalRotation(pitchValue: NSNumber(value: degrees), rollValue: 0, yawValue: 0, time: TimeInterval(speed), mode: DJIGimbalRotationMode.relativeAngle)
         
         self.gimbal!.rotate(with: rotation, completion: { err in
             if err != nil {
@@ -56,14 +66,6 @@ public class GimbalManager {
             }
         })
         
-    }
-    
-    func lookFront() {
-        rotate(degrees: front)
-    }
-    
-    func lookUnder() {
-        rotate(degrees: under)
     }
     
     func resetGimbal(){

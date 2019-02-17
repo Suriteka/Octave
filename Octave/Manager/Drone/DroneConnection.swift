@@ -66,6 +66,7 @@ class DroneConnection {
         if let model = newProduct.model {
             DroneConnection.model = model
             print("\(model) is connected")
+            GimbalManager.shared.setup()
         }
         
         

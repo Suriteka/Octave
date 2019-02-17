@@ -7,7 +7,24 @@
 //
 
 import Foundation
+import UIKit
 
-struct ActionGimbalRotation{
+struct ActionSparkGimbalRotation{
+    var direction: Direction
+    var speed: CGFloat
     
+    public enum Direction:String, CaseIterable {
+        case top,bottom
+        
+        func value() -> Float {
+            switch self {
+                case .top: return 90.0
+                case .bottom: return -90.0
+            }
+        }
+    }
+    
+    func description() -> String {
+        return "\(direction)"
+    }
 }

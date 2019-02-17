@@ -26,6 +26,8 @@ class ActionManager {
             
             case ".sparkRotation": MovingManager.instance.executeSparkRotation(action: action.actionValues as! ActionSparkRotation)
 
+            case ".sparkGimbalRotation": GimbalManager.shared.executeGimbalRotation(action: action.actionValues as! ActionSparkGimbalRotation)
+            
             default:
                 print("I don't know this type of action")
         }
