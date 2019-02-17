@@ -107,6 +107,15 @@ class Scenario {
                         print("Unknown ActionName of sparkDirectionVertical in actionCreator function")
                 }
             
+            case ".sparkRotation":
+                switch actionName {
+                    case ".clockwise":
+                        action = Action.sparkRotation(direction: .clockwise, speed: speed)
+                    case ".counterClockwise":
+                        action = Action.sparkRotation(direction: .counterClockwise, speed: speed)
+                    default: print("Unknown ActionName of sparkDirectionVertical in actionCreator function")
+                }
+            
             /* By default if the action is not ok */
             default:
                 action = Action.sparkDirectionHorizontal(direction: .left, speed: speed)

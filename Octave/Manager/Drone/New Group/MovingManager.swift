@@ -16,7 +16,7 @@ class MovingManager {
     
     func executeSparkDirectionHorizontal(action : ActionSparkDirectionHorizontal) {
         if ConfigManager.shared.config["debug"] == "true" {
-            print("I'm doing \(action.direction) with a speed of \(action.speed)")
+            print("I'm doing \(action.direction) movement with a speed of \(action.speed)")
         } else {
             if let mySpark = DJISDKManager.product() as? DJIAircraft {
                 switch action.direction {
@@ -44,6 +44,16 @@ class MovingManager {
             print("I'm doing \(action.direction) with a speed of \(action.speed)")
             if let mySpark = DJISDKManager.product() as? DJIAircraft {
                 mySpark.mobileRemoteController?.leftStickVertical = Float(action.direction.value() * action.speed)
+            }
+        }
+    }
+    
+    func executeSparkRotation(action : ActionSparkRotation) {
+        switch action.direction {
+        case .clockwise,.counterClockwise:
+            print("I'm doing \(action.direction) rotation with a speed of \(action.speed)")
+            if let mySpark = DJISDKManager.product() as? DJIAircraft {
+                mySpark.mobileRemoteController?.leftStickHorizontal = Float(action.direction.value() * action.speed)
             }
         }
     }

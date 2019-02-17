@@ -9,12 +9,27 @@
         ]
     },
     {
+        "duration" : "10",
+        "actions" : [
+            {
+                "actionType" : ".sparkRotation",
+                "actionName" : ".counterClockwise",
+                "speed" : "1"
+            }
+        ]
+    },
+    {
         "duration" : "2",
         "actions" : [
             {
                 "actionType" : ".sparkDirectionHorizontal",
                 "actionName" : ".forward",
                 "speed" : "0.3"
+            },
+            {
+                "actionType" : ".sparkRotation",
+                "actionName" : ".clockwise",
+                "speed" : "1"
             }
         ]
     },

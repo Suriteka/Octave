@@ -24,6 +24,8 @@ class ActionManager {
 
             case ".sparkEvent": EventManager.instance.executeSparkEvent(action: action.actionValues as! ActionSparkEvent)
             
+            case ".sparkRotation": MovingManager.instance.executeSparkRotation(action: action.actionValues as! ActionSparkRotation)
+
             default:
                 print("I don't know this type of action")
         }
