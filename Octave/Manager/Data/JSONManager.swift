@@ -1,5 +1,5 @@
 //
-//  JSONFileManager.swift
+//  JSONManager.swift
 //  Octave
 //
 //  Created by Jonathan Alpay on 09/02/2019.
@@ -9,7 +9,7 @@
 import Foundation
 import SwiftyJSON
 
-class JSONFileManager {
+class JSONManager {
     var path: String = ""
     
     init(fileName: String) {
@@ -31,6 +31,12 @@ class JSONFileManager {
         } catch let error {
             print("parse error: \(error.localizedDescription)")
         }
+        
+        return json
+    }
+    
+    static func createFromData(data: Data) -> JSON {
+        let json = JSON(data: data)
         
         return json
     }
