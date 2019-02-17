@@ -9,65 +9,55 @@
 import UIKit
 import DJISDK
 
-// Un manageur de Mouvement/Déplacement
-// Qui liste les mouvements et permet de les afficher dans la console
+// A moving Manager
 class MovingManager {
     
     static let instance = MovingManager()
-    var mouvements = [Movement]()
     
-    func restart() {
-        DirectionSequence.instance.content.removeAll()
-        mouvements = []
-    }
-    
-    func appendMouvement(mouvement:Movement) {
-        DirectionSequence.instance.content.append(mouvement.description())
-        mouvements.append(mouvement)
-    }
-    
-    func play() {
-        print("*** Playing sequence ***")
-        executeMove()
-    }
-    
-    func executeMove() {
-        if let move = mouvements.first {
-            // Ici Envoyer la direction au drone == Remplir les sticks
-            if ConfigManager.shared.config["debug"] == "true" {
-                print(move.description())
-            } else {
-                if let mySpark = DJISDKManager.product() as? DJIAircraft {
-                    switch move.direction {
-                        case .left,.right:
-                            mySpark.mobileRemoteController?.rightStickVertical = 0.0
-                            mySpark.mobileRemoteController?.rightStickHorizontal = Float(move.direction.value().x * move.speed)
-                        
-                        case .top,.back:
-                            mySpark.mobileRemoteController?.rightStickHorizontal = 0.0
-                            mySpark.mobileRemoteController?.rightStickVertical = Float(move.direction.value().y * move.speed)
-                        
-                        case .topLeft,.topRight, .bottomLeft, .bottomRight:
-                            mySpark.mobileRemoteController?.rightStickHorizontal = Float(move.direction.value().x * move.speed)
-                            mySpark.mobileRemoteController?.rightStickVertical = Float(move.direction.value().y * move.speed)
-                        
-                        case .stop:
-                            mySpark.mobileRemoteController?.rightStickHorizontal = Float(0)
-                            mySpark.mobileRemoteController?.rightStickVertical = Float(0)
-                    }
+    func executeSparkDirectionHorizontal(action : ActionSparkDirectionHorizontal) {
+        if ConfigManager.shared.config["debug"] == "true" {
+            print("I'm doing \(action.direction) with a speed of \(action.speed)")
+        } else {
+            if let mySpark = DJISDKManager.product() as? DJIAircraft {
+                switch action.direction {
+                case .left,.right:
+                    mySpark.mobileRemoteController?.rightStickVertical = 0.0
+                    mySpark.mobileRemoteController?.rightStickHorizontal = Float(action.direction.value().x * action.speed)
+                    
+                case .forward,.backward:
+                    mySpark.mobileRemoteController?.rightStickHorizontal = 0.0
+                    mySpark.mobileRemoteController?.rightStickVertical = Float(action.direction.value().y * action.speed)
+                    
+                case .forwardLeft,.forwardRight, .backwardLeft, .backwardRight:
+                    mySpark.mobileRemoteController?.rightStickHorizontal = Float(action.direction.value().x * action.speed)
+                    mySpark.mobileRemoteController?.rightStickVertical = Float(action.direction.value().y * action.speed)
+                    
                 }
             }
-          
-            Timer.scheduledTimer(withTimeInterval: TimeInterval(move.duration), repeats: false) { (t) in
-                // Code exécuté après move.duration seconds
-                self.mouvements.remove(at: 0)
-                self.executeMove()
-            }
-            
-        } else {
-            // Stop the drone
-            MovingManager.instance.appendMouvement(mouvement: Movement(direction: .stop, duration: 0.0, speed: 0.0))
         }
     }
     
+    
+    func executeSparkDirectionVertical(action : ActionSparkDirectionVertical) {
+        switch action.direction {
+        case .top,.bottom:
+            print("I'm doing \(action.direction) with a speed of \(action.speed)")
+            if let mySpark = DJISDKManager.product() as? DJIAircraft {
+                mySpark.mobileRemoteController?.leftStickVertical = Float(action.direction.value() * action.speed)
+            }
+        }
+    }
+    
+    /* Stop the drone */
+    func stop() {
+        print("*** Stop ***")
+        SequenceManager.instance.restart()
+        if let mySpark = DJISDKManager.product() as? DJIAircraft {
+            mySpark.mobileRemoteController?.rightStickVertical = 0.0
+            mySpark.mobileRemoteController?.rightStickHorizontal = 0.0
+            mySpark.mobileRemoteController?.leftStickVertical = 0.0
+            mySpark.mobileRemoteController?.leftStickHorizontal = 0.0
+            
+        }
+    }
 }

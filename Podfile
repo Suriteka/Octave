@@ -8,7 +8,8 @@ target 'Octave' do
   pod 'DJI-SDK-iOS'
   pod 'Starscream'
   pod 'SwiftyJSON', '~> 4.0'
-
+  pod 'Socket.IO-Client-Swift', '~> 14.0.0'
+  
   target 'OctaveTests' do
     inherit! :search_paths
     # Pods for testing

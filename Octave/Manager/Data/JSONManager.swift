@@ -36,7 +36,14 @@ class JSONManager {
     }
     
     static func createFromData(data: Data) -> JSON {
-        let json = JSON(data: data)
+        let json:JSON
+        
+        do {
+            try json = JSON(data: data)
+        } catch {
+            print("Error with your data my friend")
+            json = JSON()
+        }
         
         return json
     }

@@ -15,7 +15,7 @@ class ConfigManager {
     let config:JSON
     
     private init(configFile: String) {
-        let configJSON = JSONFileManager.init(fileName: configFile)
+        let configJSON = JSONManager.init(fileName: configFile)
         config = configJSON.decode()
     }
 }

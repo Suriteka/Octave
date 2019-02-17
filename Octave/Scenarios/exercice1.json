@@ -1,16 +1,27 @@
 [
     {
-        "direction" : "top",
-        "speed": "0.5",
-        "duration" : "4",
-        "beforeAction": "takePicture",
-        "afterAction": "takePicture",
+        "duration" : "2",
+        "actions" : [
+            {
+                "actionType" : ".sparkDirectionHorizontal",
+                "actionName" : ".forward",
+                "speed" : "0.3"
+            }
+        ]
     },
     {
-        "direction" : "back",
-        "speed": "0.2",
-        "duration" : "5",
-        "beforeAction": "takePicture",
-        "afterAction": "takePicture"
+        "duration" : "4",
+        "actions" : [
+            {
+                "actionType" : ".sparkDirectionVertical",
+                "actionName" : ".top",
+                "speed" : "0.2"
+            },
+            {
+                "actionType" : ".sparkDirectionHorizontal",
+                "actionName" : ".backward",
+                "speed" : "0.2"
+            }
+        ]
     }
 ]

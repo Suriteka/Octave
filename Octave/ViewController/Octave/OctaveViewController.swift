@@ -10,21 +10,21 @@ import UIKit
 
 class OctaveViewController: UIViewController {
 
+    @IBOutlet weak var socketConnected: UILabel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        SocketIOManager.shared.sendConnection()
+        
+        SocketIOManager.shared.didReceiveAllConnectedCallback = { () -> () in
+            self.socketConnected.text = "Socket : Connecté"
+        }
+        
+        SocketIOManager.shared.didReceiveAllSendGyroCallback = { (data) -> () in
+            let json = JSONManager.createFromData(data: data as! Data)
+            print(json)
+        }
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

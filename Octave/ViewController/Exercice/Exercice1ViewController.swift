@@ -16,7 +16,23 @@ class Exercice1ViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         scenario = Scenario(name: "exercice1")
+        //scenario.play()
+    }
+    
+    @IBAction func takeOff(_ sender: Any) {
+        LandingManager.instance.takeOff()
+    }
+    
+    @IBAction func execute(_ sender: Any) {
         scenario.play()
+    }
+    
+    @IBAction func landing(_ sender: Any) {
+        LandingManager.instance.landing()
+    }
+    
+    @IBAction func stop(_ sender: Any) {
+        MovingManager.instance.stop()
     }
     
 }

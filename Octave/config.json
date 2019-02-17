@@ -1,4 +1,5 @@
 {
-    "debug": "true"
+    "debug": "true",
+    "serverUrl": "https://octaserve.suriteka.website"
 }
 
