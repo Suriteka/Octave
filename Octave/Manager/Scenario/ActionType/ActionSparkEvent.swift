@@ -9,5 +9,17 @@
 import Foundation
 
 struct ActionSparkEvent{
+    var event: Event
     
+    public enum Event:String, CaseIterable {
+        case takeOff,landing, stop
+        
+        func value() -> String {
+            switch self {
+                case .takeOff: return "takeOff"
+                case .landing: return "landing"
+                case .stop: return "stop"
+            }
+        }
+    }
 }

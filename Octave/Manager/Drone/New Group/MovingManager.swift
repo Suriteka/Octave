@@ -50,14 +50,22 @@ class MovingManager {
     
     /* Stop the drone */
     func stop() {
-        print("*** Stop ***")
+        if let mySpark = DJISDKManager.product() as? DJIAircraft {
+            mySpark.mobileRemoteController?.rightStickVertical = 0.0
+            mySpark.mobileRemoteController?.rightStickHorizontal = 0.0
+            mySpark.mobileRemoteController?.leftStickVertical = 0.0
+            mySpark.mobileRemoteController?.leftStickHorizontal = 0.0
+        }
+    }
+    
+    func emergencyStop() {
+        print("*** Emergency Stop ***")
         SequenceManager.instance.restart()
         if let mySpark = DJISDKManager.product() as? DJIAircraft {
             mySpark.mobileRemoteController?.rightStickVertical = 0.0
             mySpark.mobileRemoteController?.rightStickHorizontal = 0.0
             mySpark.mobileRemoteController?.leftStickVertical = 0.0
             mySpark.mobileRemoteController?.leftStickHorizontal = 0.0
-            
         }
     }
 }

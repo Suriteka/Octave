@@ -17,11 +17,13 @@ class ActionManager {
         
         switch action.getActionType() {
             /* If the action is to move horizontaly (left, right, ...), let's execute it */
-            case ".sparkDirectionHorizontal":                MovingManager.instance.executeSparkDirectionHorizontal(action: action.actionValues as! ActionSparkDirectionHorizontal)
+            case ".sparkDirectionHorizontal": MovingManager.instance.executeSparkDirectionHorizontal(action: action.actionValues as! ActionSparkDirectionHorizontal)
 
             /* If the action is to move verticaly (top-bottom), let's execute it */
-            case ".sparkDirectionVertical":                MovingManager.instance.executeSparkDirectionVertical(action: action.actionValues as! ActionSparkDirectionVertical)
+            case ".sparkDirectionVertical": MovingManager.instance.executeSparkDirectionVertical(action: action.actionValues as! ActionSparkDirectionVertical)
 
+            case ".sparkEvent": EventManager.instance.executeSparkEvent(action: action.actionValues as! ActionSparkEvent)
+            
             default:
                 print("I don't know this type of action")
         }

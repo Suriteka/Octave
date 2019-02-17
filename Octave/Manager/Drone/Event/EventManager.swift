@@ -9,8 +9,20 @@
 import Foundation
 import DJISDK
 
-class LandingManager {
-    static let instance = LandingManager()
+class EventManager {
+    static let instance = EventManager()
+    
+    
+    /*
+     * SparkEvent for Scenario
+     */
+    func executeSparkEvent(action: ActionSparkEvent) {
+        switch action.event {
+            case .landing: landing()
+            case .takeOff: takeOff()
+            case .stop: stop()
+        }
+    }
 
     /*
      * Landing the drone
@@ -44,5 +56,12 @@ class LandingManager {
                 }
             }
         }
+    }
+    
+    /*
+     * Stop the drone if we want it
+     */
+    func stop() {
+       MovingManager.instance.stop()
     }
 }

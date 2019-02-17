@@ -13,7 +13,7 @@
 		6B2852C6220EDFB100110F2D /* CGPoints+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2852C2220EDFB000110F2D /* CGPoints+Extensions.swift */; };
 		6B2852C7220EDFB100110F2D /* DirectionSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2852C3220EDFB000110F2D /* DirectionSequence.swift */; };
 		6B2852C9220EDFB100110F2D /* MovingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2852C5220EDFB100110F2D /* MovingManager.swift */; };
-		6B2852CC220EE1A700110F2D /* LandingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2852CB220EE1A700110F2D /* LandingManager.swift */; };
+		6B2852CC220EE1A700110F2D /* EventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2852CB220EE1A700110F2D /* EventManager.swift */; };
 		6B2852D1220EE34500110F2D /* JSONManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2852D0220EE34500110F2D /* JSONManager.swift */; };
 		6B2852D4220EE78100110F2D /* config.json in Resources */ = {isa = PBXBuildFile; fileRef = 6B2852D3220EE78100110F2D /* config.json */; };
 		6B2852D7220EE88100110F2D /* ConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2852D6220EE88100110F2D /* ConfigManager.swift */; };
@@ -95,7 +95,7 @@
 		6B2852C2220EDFB000110F2D /* CGPoints+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoints+Extensions.swift"; sourceTree = "<group>"; };
 		6B2852C3220EDFB000110F2D /* DirectionSequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionSequence.swift; sourceTree = "<group>"; };
 		6B2852C5220EDFB100110F2D /* MovingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovingManager.swift; sourceTree = "<group>"; };
-		6B2852CB220EE1A700110F2D /* LandingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingManager.swift; sourceTree = "<group>"; };
+		6B2852CB220EE1A700110F2D /* EventManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventManager.swift; sourceTree = "<group>"; };
 		6B2852D0220EE34500110F2D /* JSONManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONManager.swift; sourceTree = "<group>"; };
 		6B2852D3220EE78100110F2D /* config.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = config.json; sourceTree = "<group>"; };
 		6B2852D6220EE88100110F2D /* ConfigManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigManager.swift; sourceTree = "<group>"; };
@@ -220,12 +220,12 @@
 			path = "New Group";
 			sourceTree = "<group>";
 		};
-		6B2852CA220EE18A00110F2D /* Landing */ = {
+		6B2852CA220EE18A00110F2D /* Event */ = {
 			isa = PBXGroup;
 			children = (
-				6B2852CB220EE1A700110F2D /* LandingManager.swift */,
+				6B2852CB220EE1A700110F2D /* EventManager.swift */,
 			);
-			path = Landing;
+			path = Event;
 			sourceTree = "<group>";
 		};
 		6B2852CF220EE33500110F2D /* Config */ = {
@@ -377,7 +377,7 @@
 			children = (
 				6B2852DB220F522E00110F2D /* Camera */,
 				6B2852D8220F21DF00110F2D /* Gimbal */,
-				6B2852CA220EE18A00110F2D /* Landing */,
+				6B2852CA220EE18A00110F2D /* Event */,
 				6B2852C1220EDFA800110F2D /* Moving */,
 				6B354983220CCD2C00586A41 /* DroneConnection.swift */,
 			);
@@ -699,7 +699,7 @@
 				6B2852C6220EDFB100110F2D /* CGPoints+Extensions.swift in Sources */,
 				6BC6A066220C2592004C9458 /* SocketTestViewController.swift in Sources */,
 				6BCA98622219C56500F3FF17 /* ActionSequence.swift in Sources */,
-				6B2852CC220EE1A700110F2D /* LandingManager.swift in Sources */,
+				6B2852CC220EE1A700110F2D /* EventManager.swift in Sources */,
 				6BCA983A22195A5E00F3FF17 /* SocketIOManager.swift in Sources */,
 				6BCA98602219C56500F3FF17 /* Sequence.swift in Sources */,
 				6B2852E7220F594E00110F2D /* Exercice1ViewController.swift in Sources */,

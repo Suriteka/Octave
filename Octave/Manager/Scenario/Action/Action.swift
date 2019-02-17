@@ -12,7 +12,7 @@ import UIKit
 enum Action {
     case sparkDirectionHorizontal(direction: ActionSparkDirectionHorizontal.Direction, speed :CGFloat)
     case sparkDirectionVertical (direction: ActionSparkDirectionVertical.Direction, speed :CGFloat)
-    case sparkEvent
+    case sparkEvent(event: ActionSparkEvent.Event)
     case sparkRotation
     case gimbalRotation
     case gimbalEvent
@@ -22,9 +22,9 @@ enum Action {
         case let .sparkDirectionHorizontal(direction, speed):
             return ActionSparkDirectionHorizontal(direction : direction, speed: speed)
         case let .sparkDirectionVertical(direction, speed):
-                return ActionSparkDirectionVertical(direction : direction, speed: speed)
-        case let .sparkEvent:
-                return "TODO"
+            return ActionSparkDirectionVertical(direction : direction, speed: speed)
+        case let .sparkEvent(event):
+            return ActionSparkEvent(event: event)
         case let .sparkRotation:
                 return "TODO"
         case let .gimbalRotation:
@@ -40,8 +40,8 @@ enum Action {
             return direction
         case let .sparkDirectionVertical(direction):
             return direction
-        case let .sparkEvent:
-            return "TODO"
+        case let .sparkEvent(event):
+            return event
         case let .sparkRotation:
             return "TODO"
         case let .gimbalRotation:

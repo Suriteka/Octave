@@ -94,6 +94,19 @@ class Scenario {
                         print("Unknown ActionName of sparkDirectionVertical in actionCreator function")
                 }
             
+            /* Spark events like landing, takeOff, ... */
+            case ".sparkEvent":
+                switch actionName {
+                    case ".landing" :
+                        action = Action.sparkEvent(event: .landing)
+                    case ".takeOff" :
+                        action = Action.sparkEvent(event: .takeOff)
+                    case ".stop" :
+                        action = Action.sparkEvent(event: .stop)
+                    default:
+                        print("Unknown ActionName of sparkDirectionVertical in actionCreator function")
+                }
+            
             /* By default if the action is not ok */
             default:
                 action = Action.sparkDirectionHorizontal(direction: .left, speed: speed)

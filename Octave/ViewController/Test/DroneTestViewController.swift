@@ -28,7 +28,7 @@ class DroneTestViewController: UIViewController {
     */
 
     @IBAction func takeOff(_ sender: Any) {
-        LandingManager.instance.takeOff()
+        EventManager.instance.takeOff()
     }
     
     @IBAction func scenario(_ sender: Any) {
@@ -40,6 +40,6 @@ class DroneTestViewController: UIViewController {
     }
     
     @IBAction func landing(_ sender: Any) {
-        LandingManager.instance.landing()
+        EventManager.instance.landing()
     }
 }

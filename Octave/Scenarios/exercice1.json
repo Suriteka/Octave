@@ -1,5 +1,14 @@
 [
     {
+        "duration" : "10",
+        "actions" : [
+            {
+                "actionType" : ".sparkEvent",
+                "actionName" : ".takeOff",
+            }
+        ]
+    },
+    {
         "duration" : "2",
         "actions" : [
             {
@@ -23,5 +32,14 @@
                 "speed" : "0.2"
             }
         ]
-    }
+    },
+    {
+        "duration" : "10",
+        "actions" : [
+            {
+                "actionType" : ".sparkEvent",
+                "actionName" : ".landing",
+            }
+        ]
+    },
 ]

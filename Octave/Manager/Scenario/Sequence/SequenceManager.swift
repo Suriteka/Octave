@@ -34,6 +34,8 @@ class SequenceManager {
     
     /* Execute Sequences if there is any */
     func executeSequence() {
+        EventManager.instance.stop()
+        
         if let sequence = sequences.first {
             
             for action in sequence.sequenceList {
