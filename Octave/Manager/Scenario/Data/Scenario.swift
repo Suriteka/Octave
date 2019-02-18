@@ -55,13 +55,14 @@ class Scenario {
     
     /* Create actions in the sequence */
     func actionCreator(actionType:String, actionName:String, speed: CGFloat) -> Action {
-        var action:Action = Action.sparkDirectionHorizontal(direction: .left, speed: speed)
+        var action:Action = Action.sparkEvent(event: .stop)
         
         /* We are looking to the type of the action */
         switch actionType {
             
             /* Moving Horizontaly the drone */
             case ".sparkDirectionHorizontal":
+            
                 switch actionName {
                     case ".forward" :
                         action = Action.sparkDirectionHorizontal(direction: .forward, speed: speed)
@@ -125,12 +126,20 @@ class Scenario {
                 default: print("Unknown ActionName of sparkDirectionVertical in actionCreator function")
             }
             
+            case ".sparkGimbalEvent":
+                print(actionName)
+
+                switch actionName {
+                case ".takePictureFirst": action = Action.sparkGimbalEvent(event: .takePictureFirst)
+                case ".takePictureSecond": action = Action.sparkGimbalEvent(event: .takePictureSecond)
+                default: print("Unknown ActionName of sparkDirectionVertical in actionCreator function")
+            }
             
             /* By default if the action is not ok */
             default:
-                action = Action.sparkDirectionHorizontal(direction: .left, speed: speed)
+                action = Action.sparkEvent(event: .stop)
         }
-        
+        print(action)
         return action
     }
 }

@@ -41,12 +41,12 @@
 		6BA88957220CBF2D00BCAC08 /* VideoPreviewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BA88956220CBF2D00BCAC08 /* VideoPreviewer.framework */; };
 		6BC6A066220C2592004C9458 /* SocketTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC6A065220C2592004C9458 /* SocketTestViewController.swift */; };
 		6BCA983A22195A5E00F3FF17 /* SocketIOManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCA983922195A5E00F3FF17 /* SocketIOManager.swift */; };
-		6BCA98572219C55300F3FF17 /* ActionGimbalRotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCA98512219C55300F3FF17 /* ActionGimbalRotation.swift */; };
+		6BCA98572219C55300F3FF17 /* ActionSparkGimbalRotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCA98512219C55300F3FF17 /* ActionSparkGimbalRotation.swift */; };
 		6BCA98582219C55300F3FF17 /* ActionSparkDirectionHorizontal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCA98522219C55300F3FF17 /* ActionSparkDirectionHorizontal.swift */; };
 		6BCA98592219C55300F3FF17 /* ActionSparkDirectionVertical.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCA98532219C55300F3FF17 /* ActionSparkDirectionVertical.swift */; };
 		6BCA985A2219C55300F3FF17 /* ActionSparkEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCA98542219C55300F3FF17 /* ActionSparkEvent.swift */; };
 		6BCA985B2219C55300F3FF17 /* ActionSparkRotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCA98552219C55300F3FF17 /* ActionSparkRotation.swift */; };
-		6BCA985C2219C55300F3FF17 /* ActionGimbalEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCA98562219C55300F3FF17 /* ActionGimbalEvent.swift */; };
+		6BCA985C2219C55300F3FF17 /* ActionSparkGimbalEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCA98562219C55300F3FF17 /* ActionSparkGimbalEvent.swift */; };
 		6BCA98602219C56500F3FF17 /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCA985D2219C56500F3FF17 /* Sequence.swift */; };
 		6BCA98612219C56500F3FF17 /* SequenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCA985E2219C56500F3FF17 /* SequenceManager.swift */; };
 		6BCA98622219C56500F3FF17 /* ActionSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCA985F2219C56500F3FF17 /* ActionSequence.swift */; };
@@ -126,12 +126,12 @@
 		6BA88956220CBF2D00BCAC08 /* VideoPreviewer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VideoPreviewer.framework; sourceTree = "<group>"; };
 		6BC6A065220C2592004C9458 /* SocketTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketTestViewController.swift; sourceTree = "<group>"; };
 		6BCA983922195A5E00F3FF17 /* SocketIOManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketIOManager.swift; sourceTree = "<group>"; };
-		6BCA98512219C55300F3FF17 /* ActionGimbalRotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionGimbalRotation.swift; sourceTree = "<group>"; };
+		6BCA98512219C55300F3FF17 /* ActionSparkGimbalRotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionSparkGimbalRotation.swift; sourceTree = "<group>"; };
 		6BCA98522219C55300F3FF17 /* ActionSparkDirectionHorizontal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionSparkDirectionHorizontal.swift; sourceTree = "<group>"; };
 		6BCA98532219C55300F3FF17 /* ActionSparkDirectionVertical.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionSparkDirectionVertical.swift; sourceTree = "<group>"; };
 		6BCA98542219C55300F3FF17 /* ActionSparkEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionSparkEvent.swift; sourceTree = "<group>"; };
 		6BCA98552219C55300F3FF17 /* ActionSparkRotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionSparkRotation.swift; sourceTree = "<group>"; };
-		6BCA98562219C55300F3FF17 /* ActionGimbalEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionGimbalEvent.swift; sourceTree = "<group>"; };
+		6BCA98562219C55300F3FF17 /* ActionSparkGimbalEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionSparkGimbalEvent.swift; sourceTree = "<group>"; };
 		6BCA985D2219C56500F3FF17 /* Sequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sequence.swift; sourceTree = "<group>"; };
 		6BCA985E2219C56500F3FF17 /* SequenceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SequenceManager.swift; sourceTree = "<group>"; };
 		6BCA985F2219C56500F3FF17 /* ActionSequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionSequence.swift; sourceTree = "<group>"; };
@@ -428,8 +428,8 @@
 		6BCA98452219C4D400F3FF17 /* ActionType */ = {
 			isa = PBXGroup;
 			children = (
-				6BCA98562219C55300F3FF17 /* ActionGimbalEvent.swift */,
-				6BCA98512219C55300F3FF17 /* ActionGimbalRotation.swift */,
+				6BCA98562219C55300F3FF17 /* ActionSparkGimbalEvent.swift */,
+				6BCA98512219C55300F3FF17 /* ActionSparkGimbalRotation.swift */,
 				6BCA98522219C55300F3FF17 /* ActionSparkDirectionHorizontal.swift */,
 				6BCA98532219C55300F3FF17 /* ActionSparkDirectionVertical.swift */,
 				6BCA98542219C55300F3FF17 /* ActionSparkEvent.swift */,
@@ -705,7 +705,7 @@
 				6B2852E7220F594E00110F2D /* Exercice1ViewController.swift in Sources */,
 				6B354982220CCCC400586A41 /* GimbalManager.swift in Sources */,
 				6B2852E2220F542A00110F2D /* Scenario.swift in Sources */,
-				6BCA98572219C55300F3FF17 /* ActionGimbalRotation.swift in Sources */,
+				6BCA98572219C55300F3FF17 /* ActionSparkGimbalRotation.swift in Sources */,
 				6B5B8A582219C9AE00875A04 /* Action.swift in Sources */,
 				6B2852DA220F22B800110F2D /* OctaveViewController.swift in Sources */,
 				6B2852C9220EDFB100110F2D /* MovingManager.swift in Sources */,
@@ -721,7 +721,7 @@
 				6BCA98612219C56500F3FF17 /* SequenceManager.swift in Sources */,
 				6BCA98582219C55300F3FF17 /* ActionSparkDirectionHorizontal.swift in Sources */,
 				6B2852D1220EE34500110F2D /* JSONManager.swift in Sources */,
-				6BCA985C2219C55300F3FF17 /* ActionGimbalEvent.swift in Sources */,
+				6BCA985C2219C55300F3FF17 /* ActionSparkGimbalEvent.swift in Sources */,
 				6B354971220CC63300586A41 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

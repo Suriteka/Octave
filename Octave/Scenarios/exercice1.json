@@ -1,21 +1,49 @@
 [
     {
-        "duration" : "2",
+        "duration" : "3",
         "actions" : [
             {
                 "actionType" : ".sparkGimbalRotation",
                 "actionName" : ".top",
-                "speed": "0.4"
+                "speed" : "0.2"
             }
         ]
     },
     {
-        "duration" : "2",
+        "duration" : "3",
+        "actions" : [
+            {
+                "actionType" : ".sparkGimbalEvent",
+                "actionName" : ".takePictureFirst"
+            }
+        ]
+    },
+    {
+        "duration" : "3",
         "actions" : [
             {
                 "actionType" : ".sparkGimbalRotation",
                 "actionName" : ".bottom",
-                "speed": "0.1"
+                "speed" : "0.2"
+            }
+        ]
+    },
+    {
+        "duration" : "3",
+        "actions" : [
+            {
+                "actionType" : ".sparkGimbalEvent",
+                "actionName" : ".takePictureSecond"
+            }
+        ]
+    },
+    {
+        "duration" : "3",
+        "actions" : [
+            {
+                "actionType" : ".sparkGimbalRotation",
+                "actionName" : ".top",
+                "speed" : "0.2"
             }
         ]
     }

@@ -1,28 +1,59 @@
-{
-    "name": "Exercice 1",
-    "sequence" : [
-        [
+[
+    {
+        "duration" : "10",
+        "actions" : [
             {
-                "movementDirection" : "left",
-                "speed": "0.3",
-                "duration" : "0.4",
-                "beforeAction": "takePicture",
-                "afterAction": "takePicture",
+                "actionType" : ".sparkEvent",
+                "actionName" : ".takeOff",
             }
-        ],
-        [
+        ]
+    },
+    {
+        "duration" : "5",
+        "actions" : [
             {
-                "movementDirection" : "left",
-                "speed": "0.3",
-                "duration" : "0.4"
+                "actionType" : ".sparkGimbalRotation",
+                "actionName" : ".top"
+            }
+        ]
+    },
+    {
+        "duration" : "2",
+        "actions" : [
+            {
+                "actionType" : ".sparkDirectionHorizontal",
+                "actionName" : ".forward",
+                "speed" : "0.3"
             },
             {
-                "movementDirection" : "up",
-                "speed": "0.3",
-                "duration" : "0.4"
+                "actionType" : ".sparkRotation",
+                "actionName" : ".clockwise",
+                "speed" : "1"
             }
-        ],
-        
-    ],
-    "repeatBack": true
-}
+        ]
+    },
+    {
+        "duration" : "4",
+        "actions" : [
+            {
+                "actionType" : ".sparkDirectionVertical",
+                "actionName" : ".top",
+                "speed" : "0.2"
+            },
+            {
+                "actionType" : ".sparkDirectionHorizontal",
+                "actionName" : ".backward",
+                "speed" : "0.2"
+            }
+        ]
+    },
+    {
+        "duration" : "10",
+        "actions" : [
+            {
+                "actionType" : ".sparkEvent",
+                "actionName" : ".landing",
+            }
+        ]
+    },
+]

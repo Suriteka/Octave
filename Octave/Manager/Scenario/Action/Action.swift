@@ -15,7 +15,7 @@ enum Action {
     case sparkEvent(event: ActionSparkEvent.Event)
     case sparkRotation(direction: ActionSparkRotation.Direction, speed: CGFloat)
     case sparkGimbalRotation(direction: ActionSparkGimbalRotation.Direction, speed: CGFloat)
-    case gimbalEvent
+    case sparkGimbalEvent(event: ActionSparkGimbalEvent.Event)
     
     var actionValues: Any {
         switch self {
@@ -29,8 +29,8 @@ enum Action {
             return ActionSparkRotation(direction : direction, speed: speed)
         case let .sparkGimbalRotation(direction, speed):
             return ActionSparkGimbalRotation(direction: direction, speed: speed)
-        case let .gimbalEvent:
-                return "TODO"
+        case let .sparkGimbalEvent(event):
+            return ActionSparkGimbalEvent(event: event)
         }
     }
     
@@ -44,10 +44,10 @@ enum Action {
             return event
         case let .sparkRotation(direction):
             return direction
-        case let .sparkGimbalRotation(direction, speed):
+        case let .sparkGimbalRotation(direction):
             return direction
-        case let .gimbalEvent:
-            return "TODO"
+        case let .sparkGimbalEvent(event):
+            return event
         }
     }
     
@@ -63,8 +63,8 @@ enum Action {
             return ".sparkRotation"
         case .sparkGimbalRotation:
             return ".sparkGimbalRotation"
-        case .gimbalEvent:
-            return ".gimbalEvent"
+        case .sparkGimbalEvent:
+            return ".sparkGimbalEvent"
         }
     }
     

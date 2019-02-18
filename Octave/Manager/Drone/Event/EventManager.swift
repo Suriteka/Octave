@@ -12,6 +12,9 @@ import DJISDK
 class EventManager {
     static let instance = EventManager()
     
+    /* Photo shooting */
+    var takePhotoFirstCallback:(()->())? = nil
+    var takePhotoSecondCallback:(()->())? = nil
     
     /*
      * SparkEvent for Scenario
@@ -23,7 +26,29 @@ class EventManager {
             case .stop: stop()
         }
     }
-
+    
+    /*
+     * Event with a gimbal ! :)
+     *
+     */
+    func executeGimbalEvent(action : ActionSparkGimbalEvent) {
+        
+        if ConfigManager.shared.config["debug"] == "true" {
+            print(action.event)
+            print("action")
+        } else {
+            switch action.event {
+            case .takePictureFirst:
+                print("send take picture callback to first !")
+                self.takePhotoFirstCallback?()
+            case .takePictureSecond:
+                print("send take picture callback to second!")
+                self.takePhotoSecondCallback?()
+            }
+        }
+        
+    }
+    
     /*
      * Landing the drone
      */

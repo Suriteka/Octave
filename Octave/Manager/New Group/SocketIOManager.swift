@@ -12,12 +12,13 @@ import SocketIO
 class SocketIOManager :NSObject {
     
     static let shared = SocketIOManager()
-
+    
     var socket: SocketIOClient!
     let manager = SocketManager(socketURL: URL(string: ConfigManager.shared.config["serverUrl"].string ?? "")!, config: [.log(false), .compress, .forcePolling(true), .forceNew(true)])
     
     var didReceiveAllConnectedCallback:(()->())? = nil
     var didReceiveAllSendGyroCallback:((Data)->())? = nil
+    var didReceiveAllVideoCallback:((Any)->())? = nil
 
     override init() {
         super.init()
@@ -32,13 +33,18 @@ class SocketIOManager :NSObject {
                 self.didReceiveAllConnectedCallback?()
             }
             
-            self.socket.on("sendGyro") { (dataArray, ack) in
+            self.socket.on("toVideo"){ (dataArray, ack) in
+                self.didReceiveAllVideoCallback?(dataArray)
+            }
+            
+            self.socket.on("sendGyro"){ (dataArray, ack) in
                 guard let dict = dataArray[0] as? [String: Any] else { return }
                 print(dict)
                 //print(dataArray[0].data(using: String.Encoding.utf8, allowLossyConversion: false))
                // self.didReceiveAllSendGyroCallback?(dataArray)
                // print(t)
             }
+            
         }
         
         socket.connect()
