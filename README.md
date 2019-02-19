@@ -76,7 +76,8 @@ For ```actionTypeName``` there is these values.
 |     Parameters 	|
 |---------------	|
 | .clockwise       	|
-| .counterClockwise     |
+| .counterClockwise |
+| .speed            |
 
 
 #### Event
