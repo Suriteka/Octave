@@ -52,10 +52,10 @@ For ```actionTypeName``` there is these values.
 | .backward      	|
 | .left          	|
 | .right         	|
-| .forwardleft   	|
-| .forwardright  	|
-| .backwardleft  	|
-| .backwardright 	|
+| .forwardLeft   	|
+| .forwardRight  	|
+| .backwardLeft  	|
+| .backwardRight 	|
 
 #### Vertical Direction
 To create an action that move the drone horizontaly, you need to create ```"actionType" : ".sparkDirectionVertical"```
