@@ -18,7 +18,7 @@ class SocketIOManager :NSObject {
     
     var didReceiveAllConnectedCallback:(()->())? = nil
     var didReceiveAllSendGyroCallback:((Data)->())? = nil
-    var didReceiveAllVideoCallback:((Any)->())? = nil
+    var didReceiveAllVideoCallback:((Data)->())? = nil
 
     override init() {
         super.init()
@@ -26,15 +26,20 @@ class SocketIOManager :NSObject {
     }
     
     func connectSocket() {
-        
+        print("CONNECTION")
         socket.on("connect") { _, _ in
-            
+            print("CONNECTED")
+
             self.socket.on("connectedDrone"){ (dataArray, ack) in
                 self.didReceiveAllConnectedCallback?()
             }
             
+            
             self.socket.on("toVideo"){ (dataArray, ack) in
-                self.didReceiveAllVideoCallback?(dataArray)
+                if let videoData = dataArray[0] as? Data {
+                    print(videoData.count)
+                    self.didReceiveAllVideoCallback?(videoData)
+                }
             }
             
             self.socket.on("sendGyro"){ (dataArray, ack) in
@@ -58,5 +63,9 @@ class SocketIOManager :NSObject {
     func sendMessage() {
         print("Send messages")
         self.socket.emit("", "")
+    }
+    
+    func sendVideoData(data: Data) {
+        self.socket.emit("video", data)
     }
 }

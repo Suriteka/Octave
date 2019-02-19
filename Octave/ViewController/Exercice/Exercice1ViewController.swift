@@ -24,7 +24,6 @@ class Exercice1ViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        scenario = Scenario(name: "exercice1")
         
         /* Setup Video */
         if let _ = DJISDKManager.product() {
@@ -53,6 +52,7 @@ class Exercice1ViewController: UIViewController {
     }
     
     @IBAction func execute(_ sender: Any) {
+        scenario = Scenario(name: "exercice1")
         scenario.play()
         
         EventManager.instance.takePhotoFirstCallback = { () -> () in
@@ -65,13 +65,15 @@ class Exercice1ViewController: UIViewController {
             self.captureImage(view: self.imageView2)
         }
     }
-    
-    @IBAction func landing(_ sender: Any) {
-        EventManager.instance.landing()
-    }
+
     
     @IBAction func stop(_ sender: Any) {
         MovingManager.instance.emergencyStop()
+    }
+    
+    
+    @IBAction func landing(_ sender: Any) {
+      EventManager.instance.landing()
     }
     
     func resetVideoPreview() {
@@ -115,6 +117,8 @@ class Exercice1ViewController: UIViewController {
 extension Exercice1ViewController:DJIVideoFeedListener {
     func videoFeed(_ videoFeed: DJIVideoFeed, didUpdateVideoData videoData: Data) {
         
+        // SocketIOManager.shared.sendVideoData(data: videoData)
+        
         videoData.withUnsafeBytes { (bytes:UnsafePointer<UInt8>) in
             prev1?.push(UnsafeMutablePointer(mutating: bytes), length: Int32(videoData.count))
         }
@@ -126,8 +130,6 @@ extension Exercice1ViewController:DJISDKManagerDelegate {
     func appRegisteredWithError(_ error: Error?) {
         
     }
-    
-    
 }
 
 extension Exercice1ViewController:DJICameraDelegate {

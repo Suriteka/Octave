@@ -14,7 +14,6 @@ class ActionManager {
     static let instance = ActionManager()
     
     func executeAction(action : Action) {
-        print("execute action")
         switch action.getActionType() {
             /* If the action is to move horizontaly (left, right, ...), let's execute it */
             case ".sparkDirectionHorizontal":

@@ -43,8 +43,10 @@ class SequenceManager {
             }
             
             Timer.scheduledTimer(withTimeInterval: TimeInterval(sequence.duration), repeats: false) { (t) in
-                self.sequences.remove(at: 0)
-                self.executeSequence()
+                if self.sequences.count > 0 {
+                    self.sequences.remove(at: 0)
+                    self.executeSequence()
+                }
             }
         } else {
             MovingManager.instance.stop()

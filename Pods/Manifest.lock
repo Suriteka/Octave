@@ -1,4 +1,5 @@
 PODS:
+  - DataCompression (3.0.0)
   - DJI-SDK-iOS (4.8.2)
   - Socket.IO-Client-Swift (14.0.0):
     - Starscream (~> 3.0.6)
@@ -6,6 +7,7 @@ PODS:
   - SwiftyJSON (4.2.0)
 
 DEPENDENCIES:
+  - DataCompression
   - DJI-SDK-iOS
   - Socket.IO-Client-Swift (~> 14.0.0)
   - Starscream
@@ -13,17 +15,19 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - DataCompression
     - DJI-SDK-iOS
     - Socket.IO-Client-Swift
     - Starscream
     - SwiftyJSON
 
 SPEC CHECKSUMS:
+  DataCompression: 4df426340ccbf53851df71dd652bd80d0ea47eb7
   DJI-SDK-iOS: 1d29d7baa1cdeb19ea490bad47cf8419ce4f1055
   Socket.IO-Client-Swift: 21e6a8a23a7d367d5ddfab6cbbd3c679cf3c25d6
   Starscream: ef3ece99d765eeccb67de105bfa143f929026cf5
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
-PODFILE CHECKSUM: bc436f5f01d4e0d8fa06470dcb49eef534ab1a54
+PODFILE CHECKSUM: 9a54dfa8d1a4c54d90966b9ef2003df965e9521c
 
 COCOAPODS: 1.5.3

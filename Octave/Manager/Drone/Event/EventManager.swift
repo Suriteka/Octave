@@ -20,10 +20,16 @@ class EventManager {
      * SparkEvent for Scenario
      */
     func executeSparkEvent(action: ActionSparkEvent) {
-        switch action.event {
-            case .landing: landing()
-            case .takeOff: takeOff()
-            case .stop: stop()
+        if ConfigManager.shared.config["debug"] == "true" {
+            print("Doing \(action.event) event")
+        } else {
+            print("Doing \(action.event) event")
+
+            switch action.event {
+                case .landing: landing()
+                case .takeOff: takeOff()
+                case .stop: stop()
+            }
         }
     }
     
@@ -32,21 +38,17 @@ class EventManager {
      *
      */
     func executeGimbalEvent(action : ActionSparkGimbalEvent) {
-        
         if ConfigManager.shared.config["debug"] == "true" {
-            print(action.event)
-            print("action")
+            print("Doing \(action.event) event")
         } else {
+            print("Doing \(action.event) event")
             switch action.event {
             case .takePictureFirst:
-                print("send take picture callback to first !")
                 self.takePhotoFirstCallback?()
             case .takePictureSecond:
-                print("send take picture callback to second!")
                 self.takePhotoSecondCallback?()
             }
         }
-        
     }
     
     /*
@@ -56,6 +58,7 @@ class EventManager {
         if ConfigManager.shared.config["debug"] == "true" {
             print("*** Landing ***")
         } else {
+            print("*** Landing ***")
             if let mySpark = DJISDKManager.product() as? DJIAircraft {
                 if let flightController = mySpark.flightController {
                     flightController.startLanding(completion: { (err) in
@@ -73,6 +76,7 @@ class EventManager {
         if ConfigManager.shared.config["debug"] == "true" {
             print("*** Take Off ***")
         } else {
+            print("*** Take Off ***")
             if let mySpark = DJISDKManager.product() as? DJIAircraft {
                 if let flightController = mySpark.flightController {
                     flightController.startTakeoff(completion: { (err) in

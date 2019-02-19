@@ -9,6 +9,7 @@ target 'Octave' do
   pod 'Starscream'
   pod 'SwiftyJSON', '~> 4.0'
   pod 'Socket.IO-Client-Swift', '~> 14.0.0'
+  pod 'DataCompression'
   
   target 'OctaveTests' do
     inherit! :search_paths

@@ -33,18 +33,11 @@ public class GimbalManager {
         if ConfigManager.shared.config["debug"] == "true" {
             print("Gimball rotation to \(action.direction)")
         } else {
+            print("Gimball rotation to \(action.direction)")
             switch action.direction {
                 case .top: rotate(degrees: action.direction.value(), speed: action.speed)
                 case .bottom: rotate(degrees: action.direction.value(), speed: action.speed)
             }
-        }
-    }
-    
-    func executeGimbalEvent() {
-        if ConfigManager.shared.config["debug"] == "true" {
-            print("Taking a picture")
-        } else {
-            /* Take an event callback ? */
         }
     }
     
@@ -76,9 +69,7 @@ public class GimbalManager {
     }
     
     func resetGimbal(){
-        self.gimbal!.reset { (err) in
-            
-        }
+        self.gimbal!.reset { (err) in }
     }
 }
 
