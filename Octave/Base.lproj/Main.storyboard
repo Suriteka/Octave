@@ -137,10 +137,46 @@
         <!--Exercice 2-->
         <scene sceneID="T7G-Wv-F4B">
             <objects>
-                <viewController id="SNk-ig-Vb4" sceneMemberID="viewController">
+                <viewController id="SNk-ig-Vb4" customClass="Exercice2ViewController" customModule="Octave" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1kI-DR-X0d">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iFM-LF-9p3">
+                                <rect key="frame" x="102" y="132" width="117" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Execute scenario"/>
+                                <connections>
+                                    <action selector="scenarioRun:" destination="SNk-ig-Vb4" eventType="touchUpInside" id="Sua-HL-hJ9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Knf-pU-rTF">
+                                <rect key="frame" x="131" y="85" width="58" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Take Off"/>
+                                <connections>
+                                    <action selector="takeOff:" destination="SNk-ig-Vb4" eventType="touchUpInside" id="Yxr-eA-aPZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ez-vH-UFU">
+                                <rect key="frame" x="144" y="183" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleColor" red="1" green="0.42955698840000001" blue="0.42889594120000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="stop:" destination="SNk-ig-Vb4" eventType="touchUpInside" id="YKC-lR-FHo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vtq-z7-pJh">
+                                <rect key="frame" x="133" y="237" width="55" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Landing"/>
+                                <connections>
+                                    <action selector="landing:" destination="SNk-ig-Vb4" eventType="touchUpInside" id="4Ht-GF-ph6"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="OKU-ng-f11"/>
                     </view>
@@ -266,12 +302,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bpV-OG-SRX">
-                                <rect key="frame" x="51" y="125" width="218" height="204"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bpV-OG-SRX">
+                                <rect key="frame" x="0.0" y="64" width="320" height="543"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bpV-OG-SRX" firstAttribute="leading" secondItem="Ujy-gv-AZV" secondAttribute="leading" id="39D-MV-7tT"/>
+                            <constraint firstItem="Ujy-gv-AZV" firstAttribute="trailing" secondItem="bpV-OG-SRX" secondAttribute="trailing" id="YGa-vg-jKO"/>
+                            <constraint firstItem="bpV-OG-SRX" firstAttribute="top" secondItem="Ujy-gv-AZV" secondAttribute="top" id="ddr-xc-oc1"/>
+                            <constraint firstItem="Ujy-gv-AZV" firstAttribute="bottom" secondItem="bpV-OG-SRX" secondAttribute="bottom" id="zw5-aR-dMk"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Ujy-gv-AZV"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="nt2-pi-Tcr"/>

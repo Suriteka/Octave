@@ -39,6 +39,7 @@
 		6B77D418220C20B2009C44DB /* OctaveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B77D417220C20B2009C44DB /* OctaveUITests.swift */; };
 		6BA88955220CBF2300BCAC08 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BA88954220CBF2300BCAC08 /* WebRTC.framework */; };
 		6BA88957220CBF2D00BCAC08 /* VideoPreviewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BA88956220CBF2D00BCAC08 /* VideoPreviewer.framework */; };
+		6BBF55A8221BEF3B00F4285B /* Exercice2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBF55A7221BEF3B00F4285B /* Exercice2ViewController.swift */; };
 		6BCA983A22195A5E00F3FF17 /* SocketIOManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCA983922195A5E00F3FF17 /* SocketIOManager.swift */; };
 		6BCA98572219C55300F3FF17 /* ActionSparkGimbalRotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCA98512219C55300F3FF17 /* ActionSparkGimbalRotation.swift */; };
 		6BCA98582219C55300F3FF17 /* ActionSparkDirectionHorizontal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCA98522219C55300F3FF17 /* ActionSparkDirectionHorizontal.swift */; };
@@ -123,6 +124,7 @@
 		6B77D419220C20B2009C44DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BA88954220CBF2300BCAC08 /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebRTC.framework; sourceTree = "<group>"; };
 		6BA88956220CBF2D00BCAC08 /* VideoPreviewer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VideoPreviewer.framework; sourceTree = "<group>"; };
+		6BBF55A7221BEF3B00F4285B /* Exercice2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercice2ViewController.swift; sourceTree = "<group>"; };
 		6BCA983922195A5E00F3FF17 /* SocketIOManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketIOManager.swift; sourceTree = "<group>"; };
 		6BCA98512219C55300F3FF17 /* ActionSparkGimbalRotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionSparkGimbalRotation.swift; sourceTree = "<group>"; };
 		6BCA98522219C55300F3FF17 /* ActionSparkDirectionHorizontal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionSparkDirectionHorizontal.swift; sourceTree = "<group>"; };
@@ -271,6 +273,7 @@
 			isa = PBXGroup;
 			children = (
 				6B2852E6220F594E00110F2D /* Exercice1ViewController.swift */,
+				6BBF55A7221BEF3B00F4285B /* Exercice2ViewController.swift */,
 			);
 			path = Exercice;
 			sourceTree = "<group>";
@@ -691,6 +694,7 @@
 				6BCA98622219C56500F3FF17 /* ActionSequence.swift in Sources */,
 				6B2852CC220EE1A700110F2D /* EventManager.swift in Sources */,
 				6BCA983A22195A5E00F3FF17 /* SocketIOManager.swift in Sources */,
+				6BBF55A8221BEF3B00F4285B /* Exercice2ViewController.swift in Sources */,
 				6BCA98602219C56500F3FF17 /* Sequence.swift in Sources */,
 				6B2852E7220F594E00110F2D /* Exercice1ViewController.swift in Sources */,
 				6B354982220CCCC400586A41 /* GimbalManager.swift in Sources */,

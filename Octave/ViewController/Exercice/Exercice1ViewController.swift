@@ -47,10 +47,6 @@ class Exercice1ViewController: UIViewController {
         self.resetVideoPreview()
     }
     
-    @IBAction func takeOff(_ sender: Any) {
-        EventManager.instance.takeOff()
-    }
-    
     @IBAction func execute(_ sender: Any) {
         scenario = Scenario(name: "exercice1")
         scenario.play()

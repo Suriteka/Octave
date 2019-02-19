@@ -18,8 +18,8 @@ struct ActionSparkRotation{
         
         func value() -> CGFloat {
             switch self {
-            case .clockwise: return -1
-            case .counterClockwise: return 1
+            case .clockwise: return 1
+            case .counterClockwise: return -1
             }
         }
     }

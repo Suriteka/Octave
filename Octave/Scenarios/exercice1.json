@@ -1,16 +1,40 @@
 [
     {
-        "duration" : "3",
+        "duration" : "6",
         "actions" : [
             {
-                "actionType" : ".sparkGimbalRotation",
-                "actionName" : ".top",
-                "speed" : "0.2"
+                "actionType" : ".sparkEvent",
+                "actionName" : ".takeOff"
             }
         ]
     },
     {
-        "duration" : "3",
+        "duration" : "4",
+        "actions" : [
+            {
+                "actionType" : ".sparkDirectionVertical",
+                "actionName" : ".top",
+                "speed" : "0.25"
+            },
+            {
+                "actionType" : ".sparkRotation",
+                "actionName" : ".clockwise",
+                "speed" : "0.78"
+            }
+        ]
+    },
+    {
+        "duration" : "2",
+        "actions" : [
+            {
+                "actionType" : ".sparkGimbalRotation",
+                "actionName" : ".bottom",
+                "speed" : "0.8"
+            }
+        ]
+    },
+    {
+        "duration" : "1",
         "actions" : [
             {
                 "actionType" : ".sparkGimbalEvent",
@@ -19,17 +43,67 @@
         ]
     },
     {
-        "duration" : "3",
+        "duration" : "2",
         "actions" : [
             {
                 "actionType" : ".sparkGimbalRotation",
+                "actionName" : ".top",
+                "speed" : "0.6"
+            }
+        ]
+    },
+    {
+        "duration" : "4",
+        "actions" : [
+            {
+                "actionType" : ".sparkDirectionHorizontal",
+                "actionName" : ".backward",
+                "speed" : "0.38"
+            }
+        ]
+    },
+    {
+        "duration" : "6",
+        "actions" : [
+            {
+                "actionType" : ".sparkDirectionVertical",
                 "actionName" : ".bottom",
-                "speed" : "0.2"
+                "speed" : "0.3"
             }
         ]
     },
     {
         "duration" : "3",
+        "actions" : [
+            {
+                "actionType" : ".sparkDirectionHorizontal",
+                "actionName" : ".forward",
+                "speed" : "0.45"
+            }
+        ]
+    },
+    {
+        "duration" : "4",
+        "actions" : [
+            {
+                "actionType" : ".sparkDirectionVertical",
+                "actionName" : ".top",
+                "speed" : "0.25"
+            }
+        ]
+    },
+    {
+        "duration" : "2",
+        "actions" : [
+            {
+                "actionType" : ".sparkGimbalRotation",
+                "actionName" : ".bottom",
+                "speed" : "0.8"
+            }
+        ]
+    },
+    {
+        "duration" : "1",
         "actions" : [
             {
                 "actionType" : ".sparkGimbalEvent",
@@ -38,12 +112,11 @@
         ]
     },
     {
-        "duration" : "3",
+        "duration" : "15",
         "actions" : [
             {
-                "actionType" : ".sparkGimbalRotation",
-                "actionName" : ".top",
-                "speed" : "0.2"
+                "actionType" : ".sparkEvent",
+                "actionName" : ".landing"
             }
         ]
     }
