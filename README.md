@@ -12,6 +12,19 @@ Here is the link to see the videos ⭐️: https://www.youtube.com/playlist?list
 
 The scenarios of the exercices are in the folder Octave/Scenarios
 
+## Config
+
+At the root of the project, there is a ```config.json```.
+You can pass the application to the mode debug and change the url of the socket server. 
+
+```
+{
+    "debug": "true",
+    "serverUrl": "https://octaserve.suriteka.website"
+}
+```
+
+
 ## Creation of the JSON
 
 This is an example of the JSON you need to have to manipulate the drone.
