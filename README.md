@@ -6,6 +6,12 @@ iOS App — Octave Master controller and the exercices ! ✨
 ![Image](https://lh4.googleusercontent.com/IGGKtcFJ9lbS_r3s9geLcVXQ6vA5LuPTYTLO9ZzckFz9inBrpdH_yCOB0VmR2f6sMLB5BjgKZjESCyUMtbGu=w2880-h1344-rw)
 
 
+## Exercices
+
+Here is the link to see the videos ⭐️: https://www.youtube.com/playlist?list=PLRjR1-0k_4swVZawVdHsnaWpcQ58BcR5B
+
+The scenarios of the exercices are in the folder Octave/Scenarios
+
 ## Creation of the JSON
 
 This is an example of the JSON you need to have to manipulate the drone.
