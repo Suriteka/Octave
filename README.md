@@ -1,38 +1,38 @@
 # Octave
 iOS App — Octave Master controller and the exercices ! ✨
 
+## Architecture
+
+![Image](https://lh4.googleusercontent.com/IGGKtcFJ9lbS_r3s9geLcVXQ6vA5LuPTYTLO9ZzckFz9inBrpdH_yCOB0VmR2f6sMLB5BjgKZjESCyUMtbGu=w2880-h1344-rw)
+
+
 ## Creation of the JSON
 
 This is an example of the JSON you need to have to manipulate the drone.
 
-```[
+```
+[
     {
-        "duration" : "0.1",
+        "duration" : "6",
         "actions" : [
             {
-                "actionType" : ".sparkDirectionHorizontal",
-                "actionTypeName" : ".left"
-				"speed" : "0.1",
-            },
-            {
-                "actionType" : ".sparkDirectionHorizontal",
-                "actionTypeName" : ".top"
-				"speed" : "0.1",
+                "actionType" : ".sparkEvent",
+                "actionName" : ".takeOff"
             }
         ]
     },
     {
-        "duration" : "0.1",
+        "duration" : "4",
         "actions" : [
             {
                 "actionType" : ".sparkDirectionVertical",
-                "actionTypeName" : ".top"
-				"speed" : "0.1",
+                "actionName" : ".top",
+                "speed" : "0.25"
             },
             {
-                "actionType" : ".sparkDirectionVertical",
-                "actionTypeName" : ".right"
-				"speed" : "0.1",
+                "actionType" : ".sparkRotation",
+                "actionName" : ".clockwise",
+                "speed" : "0.78"
             }
         ]
     }
@@ -69,38 +69,46 @@ For ```actionTypeName``` there is these values.
 
 
 #### Rotation
-To create an action that move the drone horizontaly, you need to create ```"actionType" : ".sparkRotation"```
+To create an action that change the rotation of the drone, you need to create ```"actionType" : ".sparkRotation"```
 For ```actionTypeName``` there is these values.
 
 
 |     Parameters 	|
 |---------------	|
-| .left       	|
-| .right      	|
+| .clockwise       	|
+| .counterClockwise     |
 
 
 #### Event
-To create an action that move the drone horizontaly, you need to create ```"actionType" : ".event"```
+To create an action that move the drone horizontaly, you need to create ```"actionType" : ".sparkEvent"```
 For ```actionTypeName``` there is these values.
 
 |     Parameters 	|
 |---------------	|
 | .landing       	|
 | .takeOff      	|
+| .stop			|
+
 
 #### Gimbal
-To create an action that move the drone horizontaly, you need to create ```"actionType" : ".gimbal"```
+To create an action that move the drone horizontaly, you need to create ```"actionType" : ".sparkGimbalRotation"```
 For ```actionTypeName``` there is these values.
 
 |     Parameters 	|
 |---------------	|
 | .top       	|
 | .bottom      	|
+| .speed	| 
 
-#### Camera
-To create an action that move the drone horizontaly, you need to create ```"actionType" : ".camera"```
+
+#### GimbalEvent
+To create an action that move the drone horizontaly, you need to create ```"actionType" : ".sparkGimbalEvent"```
 For ```actionTypeName``` there is these values.
 
 |     Parameters 	|
 |---------------	|
-| .takePicture      |
+| .takePictureFirst      |
+| .takePictureSecond      |
+
+GimbalEvent is probably gonna change one day !
+.takePictureFirst and second was easy to do the exercices. We'll change this one day.
