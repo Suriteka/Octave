@@ -6,6 +6,13 @@ iOS App — Octave Master controller and the exercices ! ✨
 ![Image](https://i.imgur.com/UNQT3TC.png)
 
 
+## Codes
+This project is the code for the iPhone that control the drone.
+
+Server : https://github.com/Suriteka/Octaserve
+Screen : https://github.com/piwis/octave_client
+Phone that send gyroscope data : https://github.com/piwis/octave_mobile
+
 ## Exercices
 
 Here is the link to see the videos ⭐️: https://www.youtube.com/playlist?list=PLRjR1-0k_4swVZawVdHsnaWpcQ58BcR5B
