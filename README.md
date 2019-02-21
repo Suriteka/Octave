@@ -3,7 +3,7 @@ iOS App — Octave Master controller and the exercices ! ✨
 
 ## Architecture
 
-![Image](https://lh4.googleusercontent.com/IGGKtcFJ9lbS_r3s9geLcVXQ6vA5LuPTYTLO9ZzckFz9inBrpdH_yCOB0VmR2f6sMLB5BjgKZjESCyUMtbGu=w2880-h1344-rw)
+![Image](https://i.imgur.com/UNQT3TC.png)
 
 
 ## Exercices
